@@ -1,11 +1,1072 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Take to work )</title>
 </head>
+
 <body>
-    
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="header__position">
+        <div class="header-flex">
+          <a href="#" class="header__link">
+            <img src="./img/logo.svg" class="header__logo" alt="logo" />
+            <div class="hounter__logo-name">Hounter</div>
+          </a>
+
+          <button class="menu-btn" type="button" data-menu-button>
+            <svg class="menu-btn__svg" width="80" height="80">
+              <use class="menu-btn__svg-burger" href="./img/sprite/sprite.svg#icon-burger"></use>
+              <use class="menu-btn__svg-cross" href="./img/sprite/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+
+          <div class="menu-box" data-menu>
+            <ul class="header-list">
+              <li class="header-list__item">
+                <a class="header-list__link">About Us</a>
+              </li>
+              <li class="header-list__item">
+                <a class="header-list__link">Article</a>
+              </li>
+              <li class="header-list__item width__submenu">
+                <a class="header-list__link">
+                  Property
+                  <svg class="header-list__svg">
+                    <use href="./img/sprite/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </a>
+                <ul class="header-menu">
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#">Property 1</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#">Property 2</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a class="header-menu__link" href="#">Property 3</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <button class="header__btn" type="button">Sign Up!</button>
+          </div>
+        </div>
+
+        <img class="header__img header__img--blue" src="./img/hero-blue.png" alt="blue" />
+        <img class="header__img header__img--green" src="./img/hero-green.png" alt="green" />
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__position">
+          <div class="hero-leftblock" data-animation="left">
+            <h1 class="hero-leftblock__title">
+              find the place to live <span class="hero-leftblock__span">your dreams</span> easily
+              here
+            </h1>
+            <p class="hero-leftblock__text">
+              Everything you need about finding your place to live will be here, where it will be
+              easier for you
+            </p>
+            <form class="hero-form">
+              <img src="./img/search.svg" class="hero-form__img-search" alt="search" />
+              <input class="hero-form__input" type="text" name="text" placeholder="Search for the location you want!" />
+
+              <button class="hero-form__btn" type="submit">
+                Search
+                <svg class="hero-form__svg">
+                  <use href="./img/sprite/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
+            </form>
+
+            <p class="hero-leftblock__under-text">Our Partnership</p>
+
+            <ul class="hero-partner">
+              <li class="hero-partner__item">
+                <a href="https://www.traveloka.com/en-en/" class="hero-partner__link">
+                  <img src="./img/partner1.svg" class="hero-partner__img" alt="partner" />
+                </a>
+              </li>
+              <li class="hero-partner__item">
+                <a href="https://www.tiket.com/" class="hero-partner__link">
+                  <img src="./img/partner2.svg" class="hero-partner__img" alt="partner" />
+                </a>
+              </li>
+              <li class="hero-partner__item">
+                <a href="https://www.airbnb.com.ua/stays/monthly" class="hero-partner__link">
+                  <img src="./img/partner3.svg" class="hero-partner__img" alt="partner" />
+                </a>
+              </li>
+              <li class="hero-partner__item">
+                <a href="https://www.tripadvisor.ua/" class="hero-partner__link">
+                  <img src="./img/partner4.svg" class="hero-partner__img" alt="partner" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-rightblock" data-animation="left">
+            <img src="./img/hero.png" class="hero-rightblock__img" alt="hero" />
+            <div class="rightblock-list slick-track d-grid">
+              <div class="rightblock-list__item slider__item slider-item slick-slide people-block">
+                <div class="rightblock-list__flex">
+                  <ul class="rightblock-img">
+                    <li class="rightblock-img__item">
+                      <img src="./img/recommen-portret3.png" class="rightblock-img__img" alt="img" />
+                    </li>
+                    <li class="rightblock-img__item">
+                      <img src="./img/recommen-portret2.png" class="rightblock-img__img" alt="img" />
+                    </li>
+                    <li class="rightblock-img__item">
+                      <img src="./img/recommen-portret1.png" class="rightblock-img__img" alt="img" />
+                    </li>
+                  </ul>
+                  <div class="rightblock-list__after-photo">
+                    <h2 class="rightblock-list__title">1K+ People</h2>
+                    <p class="rightblock-list__text">Successfully Getting Home</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rightblock-list__item slider__item slider-item slick-slide house-block">
+                <div class="rightblock-list__flex">
+                  <img src="./img/hero-ellipse4.png" class="rightblock-list__img" alt="img" />
+                  <div>
+                    <h2 class="rightblock-list__title">56 Houses</h2>
+                    <p class="rightblock-list__text">Sold Monthly</p>
+                  </div>
+                </div>
+              </div>
+              <div class="rightblock-list__item slider__item slider-item slick-slide people-looking-homes-block">
+                <div class="rightblock-list__flex">
+                  <img src="./img/recommen_portret4.png" class="rightblock-list__img" alt="img" />
+                  <div>
+                    <h2 class="rightblock-list__title">4K+</h2>
+                    <p class="rightblock-list__text">People Looking for New Homes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATION -->
+    <section class="recommen">
+      <div class="container">
+        <p class="recommen__text gold-text" data-animation="top">Our Recommendation</p>
+
+        <div class="recommen__flex">
+          <h2 class="recommen__title" data-animation="left">Featured House</h2>
+
+          <form class="recommen-form">
+            <ul class="recommen-list" data-animation="top">
+              <li class="recommen-list__item ">
+                <label class="label-radiobtn" for="houseButton">
+                  <input class="label-radiobtn__input featured-hat__menu-item" type="radio" name="radio-btn" id="houseButton" checked />
+                  <span class="label-radiobtn__span">
+                    <svg class="label-radiobtn__svg">
+                      <use href="./img/sprite/sprite.svg#icon-recommen1"></use>
+                    </svg>House
+                  </span>
+                </label>
+              </li>
+              <li class="recommen-list__item">
+                <label class="label-radiobtn" for="villaButton">
+                  <input class="label-radiobtn__input featured-hat__menu-item" type="radio" name="radio-btn" id="villaButton" />
+                  <span class="label-radiobtn__span">
+                    <svg class="label-radiobtn__svg">
+                      <use href="./img/sprite/sprite.svg#icon-recommen2"></use>
+                    </svg>Villa
+                  </span>
+                </label>
+              </li>
+              <li class="recommen-list__item">
+                <label class="label-radiobtn" for="appartmentButton">
+                  <input class="label-radiobtn__input featured-hat__menu-item" type="radio" name="radio-btn" id="appartmentButton" />
+                  <span class="label-radiobtn__span">
+                    <svg class="label-radiobtn__svg">
+                      <use href="./img/sprite/sprite.svg#icon-recommen3"></use>
+                    </svg>Apartment
+                  </span>
+                </label>
+              </li>
+            </ul>
+
+            <div class="featured-hat__navigation btn-house navigationActive" id="btn-house"></div>
+            <div class="featured-hat__navigation btn-villa" id="btn-villa"></div>
+            <div class="featured-hat__navigation btn-appartment" id="btn-appartment"></div>
+        </div>
+        </form>
+
+        <div id="house" class="featured__slider featured-slider slider-active">
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house3.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_best-deals">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-wallet"></use>
+                </svg>
+                <div class="featured-slider__tag-name">Best Deals</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">The Old Lighthouse</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">44.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret6.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Ronald Richards</div>
+                <div id="place" class="featured-slider__autor-place">Santa Ana, Illinois</div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house2.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_new-house">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-house"></use>
+                </svg>
+                <div class="featured-slider__tag-name">New House</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">Woodlandside</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">20.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret2.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Robert Fox</div>
+                <div id="place" class="featured-slider__autor-place">Dr. San Jose, South Dakota</div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house4.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_popular">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                </svg>
+                <div class="featured-slider__tag-name">Popular</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">Cosmo's House</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">22.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret5.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Jenny Wilson</div>
+                <div id="place" class="featured-slider__autor-place">Preston Rd. Inglewood, Maine 98380</div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house1.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_popular">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                </svg>
+                <div class="featured-slider__tag-name">Popular</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">Roselands House</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">35.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret1.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Dianne Russell</div>
+                <div id="place" class="featured-slider__autor-place">Manchester, Kentucky</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div id="villa" class="featured__slider featured-slider">
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house1.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_popular">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                </svg>
+                <div class="featured-slider__tag-name">Popular</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">Roselands House</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">35.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret1.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Dianne Russell</div>
+                <div id="place" class="featured-slider__autor-place">Manchester, Kentucky</div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house2.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_new-house">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-house"></use>
+                </svg>
+                <div class="featured-slider__tag-name">New House</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">Woodlandside</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">20.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret2.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Robert Fox</div>
+                <div id="place" class="featured-slider__autor-place">Dr. San Jose, South Dakota</div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house3.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_best-deals">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-wallet"></use>
+                </svg>
+                <div class="featured-slider__tag-name">Best Deals</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">The Old Lighthouse</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">44.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret6.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Ronald Richards</div>
+                <div id="place" class="featured-slider__autor-place">Santa Ana, Illinois</div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house4.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_popular">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                </svg>
+                <div class="featured-slider__tag-name">Popular</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">Cosmo's House</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">22.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret5.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Jenny Wilson</div>
+                <div id="place" class="featured-slider__autor-place">Preston Rd. Inglewood, Maine 98380</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div id="appartment" class="featured__slider featured-slider">
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house1.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_popular">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                </svg>
+                <div class="featured-slider__tag-name">Popular</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">Roselands House</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">35.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret1.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Dianne Russell</div>
+                <div id="place" class="featured-slider__autor-place">Manchester, Kentucky</div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house2.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_new-house">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-house"></use>
+                </svg>
+                <div class="featured-slider__tag-name">New House</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">Woodlandside</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">20.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret2.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Robert Fox</div>
+                <div id="place" class="featured-slider__autor-place">Dr. San Jose, South Dakota</div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house3.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_best-deals">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-wallet"></use>
+                </svg>
+                <div class="featured-slider__tag-name">Best Deals</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">The Old Lighthouse</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">44.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret6.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Ronald Richards</div>
+                <div id="place" class="featured-slider__autor-place">Santa Ana, Illinois</div>
+              </div>
+            </a>
+          </div>
+          <div class="featured-slider__card">
+            <a href="#" class="featured-slider__image">
+              <img src="./img/recommen-house4.jpg" alt="" class="featured-slider__image-img">
+              <a href="#" target="_blank" class="featured-slider__tag featured-slider__tag_popular">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                </svg>
+                <div class="featured-slider__tag-name">Popular</div>
+              </a>
+            </a>
+            <div class="featured-slider__descr">
+              <a href="#" class="featured-slider__title">Cosmo's House</a>
+              <div class="featured-slider__price">
+                <span id="currency" class="featured-slider__price-currency">$</span>
+                <span class="featured-slider__price-num">22.000.000</span>
+              </div>
+            </div>
+            <a href="#" class="featured-slider__autor">
+              <img src="./img/recommen-portret5.png" alt="" class="featured-slider__avatar">
+              <div class="featured-slider__autor-descr">
+                <div class="featured-slider__autor-name">Jenny Wilson</div>
+                <div id="place" class="featured-slider__autor-place">Preston Rd. Inglewood, Maine 98380</div>
+              </div>
+            </a>
+          </div>
+      </div>
+        <!-- <div class="recommen-card houses-block featured__slider featured-slider slider-active" id="houses-block"> -->
+        <!-- <div class="recommen-card__item" data-animation="left">
+            <div class="recommen-card__content">
+              <img src="./img/recommen-house1.jpg" class="recommen-card__img" alt="img" />
+              <div class="recommen-card-position recommen-card-position--one">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                </svg>
+                <p class="recommen-card-position__text recommen-card-position__text--red">Popular</p>
+              </div>
+            </div>
+            <div class="recommen-card__first-content">
+              <h2 class="recommen-card__title">Roselands House</h2>
+              <p class="recommen-card__price">$ 35.000.000</p>
+            </div>
+            <div class="recommen-card__second-content">
+              <img src="./img/recommen-portret1.png" class="recommen-card__under-img" alt="img" />
+              <div>
+                <h3 class="recommen-card__under-title">Dianne Russell</h3>
+                <p class="recommen-card__under-text">Manchester, Kentucky</p>
+              </div>
+            </div>
+          </div>
+          <div class="recommen-card__item" data-animation="left">
+            <div class="recommen-card__content">
+              <img src="./img/recommen-house2.jpg" class="recommen-card__img" alt="img" />
+              <div class="recommen-card-position recommen-card-position--two">
+                <svg class="recommen-card-position__svg">
+                  <use href="./img/sprite/sprite.svg#icon-recommen-house"></use>
+                </svg>
+                <p class="recommen-card-position__text recommen-card-position__text--blue ">
+                  New house
+                </p>
+              </div>
+            </div>
+            <div class="recommen-card__first-content">
+              <h2 class="recommen-card__title">Woodlandside</h2>
+              <p class="recommen-card__price">$ 20.000.000</p>
+            </div>
+            <div class="recommen-card__second-content">
+              <img src="./img/recommen-portret2.png" class="recommen-card__under-img" alt="img" />
+
+              <div>
+                <h3 class="recommen-card__under-title">Robert Fox</h3>
+                <p class="recommen-card__under-text">Dr. San Jose, South Dakota</p>
+              </div>
+            </div>
+            </li>
+            <div class="recommen-card__item" data-animation="left">
+              <div class="recommen-card__content">
+                <img src="./img/recommen-house3.jpg" class="recommen-card__img" alt="img" />
+                <div class="recommen-card-position recommen-card-position--three">
+                  <svg class="recommen-card-position__svg">
+                    <use href="./img/sprite/sprite.svg#icon-recommen-wallet"></use>
+                  </svg>
+                  <p class="recommen-card-position__text recommen-card-position__text--green">
+                    Best Deals
+                  </p>
+                </div>
+              </div>
+              <div class="recommen-card__first-content">
+                <h2 class="recommen-card__title">The Old Lighthouse</h2>
+                <p class="recommen-card__price">$ 44.000.000</p>
+              </div>
+              <div class="recommen-card__second-content">
+                <img src="./img/recommen-portret6.png" class="recommen-card__under-img" alt="img" />
+                <div>
+                  <h3 class="recommen-card__under-title">Ronald Richards</h3>
+                  <p class="recommen-card__under-text">Santa Ana, Illinois</p>
+                </div>
+              </div>
+            </div>
+            <div class="recommen-card__item" data-animation="left">
+              <div class="recommen-card__content">
+                <img src="./img/recommen-house4.jpg" class="recommen-card__img" alt="img" />
+                <div class="recommen-card-position recommen-card-position--four">
+                  <svg class="recommen-card-position__svg">
+                    <use href="./img/sprite/sprite.svg#icon-recommen-fire"></use>
+                  </svg>
+                  <p class="recommen-card-position__text recommen-card-position__text--red">Popular</p>
+                </div>
+              </div>
+              <div class="recommen-card__first-content">
+                <h2 class="recommen-card__title">Cosmo's House</h2>
+                <p class="recommen-card__price">$ 22.000.000</p>
+              </div>
+              <div class="recommen-card__second-content">
+                <img src="./img/recommen-portret5.png" class="recommen-card__under-img" alt="img" />
+                <div>
+                  <h3 class="recommen-card__under-title">Jenny Wilson</h3>
+                  <p class="recommen-card__under-text">Preston Rd. Inglewood, Maine 98380</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <!-- </div> -->
+    </section>
+
+    <!-- SELL -->
+    <section class="sell">
+      <div class="container">
+        <div class="sell__position">
+          <div class="sell-leftblock" data-animation="left">
+            <p class="gold-text gold-text--margin ">Ready to Sell!</p>
+            <div class="container-sell-house">
+              <h2 class="sell-leftblock__title">Let’s tour and see our house!</h2>
+              <p class="sell-leftblock__under-text">
+                Houses recommended by our partners that have been curated to become the home of your
+                dreams!
+              </p>
+              <p class="sell-leftblock__detail-text">House Detail</p>
+
+              <div class="d-grid sell-block-list">
+                <div class="grid-item d-flex align-items-center justify-content-center">
+                  <svg class="sell-leftblock-list__svg" width="32" height="32">
+                    <use href="./img/sprite/sprite.svg#icon-sell-bed"></use>
+                  </svg>
+                  <p class="sell-leftblock-list__text">4 Bedrooms</p>
+                </div>
+                <div class="grid-item d-flex align-items-center justify-content-center">
+                  <svg class="sell-leftblock-list__svg" width="32" height="32">
+                    <use href="./img/sprite/sprite.svg#icon-sell-bath"></use>
+                  </svg>
+                  <p class="sell-leftblock-list__text">2 Bathrooms</p>
+                </div>
+                <div class="grid-item d-flex align-items-center justify-content-center">
+                  <svg class="sell-leftblock-list__svg" width="32" height="32">
+                    <use href="./img/sprite/sprite.svg#icon-sell-car"></use>
+                  </svg>
+                  <p class="sell-leftblock-list__text">1 Carport</p>
+                </div>
+                <div class="grid-item d-flex align-items-center justify-content-center">
+                  <svg class="sell-leftblock-list__svg" width="32" height="32">
+                    <use href="./img/sprite/sprite.svg#icon-sell-stairs"></use>
+                  </svg>
+                  <p class="sell-leftblock-list__text">2 Floors</p>
+                </div>
+              </div>
+
+              <span class="sell-leftblock__span"></span>
+
+              <div class="sell-leftblock-down">
+                <div class="sell-leftblock-down__block">
+                  <img src="./img/recommen-portret1.png" class="sell-leftblock-down__img" alt="img" />
+                  <div>
+                    <h3 class="sell-leftblock-down__title">Dianne Russell</h3>
+                    <p class="sell-leftblock-down__text">Manager Director</p>
+                  </div>
+                </div>
+                <button class="sell-leftblock-down__btn" type="button">
+                  <svg width="24" height="24" class="sell-leftblock-down__svg">
+                    <use href="./img/sprite/sprite.svg#icon-sell-call"></use>
+                  </svg>
+                  Contact Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sell-rightblock" data-animation="left">
+            <img src="./img/sell-rightblock1.jpg" class="sell-rightblock__img sell-rightblock__img--bed" alt="img" />
+
+            <img src="./img/sell-rightblock2.jpg" class="sell-rightblock__img sell-rightblock__img--vase" alt="img" />
+
+            <img src="./img/sell-rightblock3.jpg" class="sell-rightblock__img sell-rightblock__img--main" alt="img" />
+
+            <img src="./img/sell-rightblock4.jpg" class="sell-rightblock__img sell-rightblock__img--room" alt="img" />
+
+            <a class="sell-rightblock__link" href="#">
+              <svg class="sell-rightblock__svg" width="20" height="20">
+                <use href="./img/sprite/sprite.svg#icon-sell-play"></use>
+              </svg>
+            </a>
+          </div>
+
+          <img src="./img/sell-orange.png" class="sell__img sell__img--orange" alt="orange" />
+          <img src="./img/sell-yellow.png" class="sell__img sell__img--yellow" alt="yellow" />
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="review">
+      <div class="container">
+        <p class="review__text gold-text" data-animation="top">See Our Review</p>
+        <h2 class="review__title" data-animation="top">What Our User Say About Us</h2>
+
+        <div class="review-list about-us__slider">
+          <div class="review-list__item" data-animation="left">
+            <img src="./img/review1.png" class="review-list__img" alt="img" />
+            <div class="review-content">
+              <h3 class="review-content__title">My house sold out fast!</h3>
+              <p class="review-content__text">
+                I was finally able to sell my house quickly through Hounter by immediately setting
+                me up with people who wanted my house. I also do not get a discount from the sale
+                of my house. Awesome!
+              </p>
+              <div class="review-under-content">
+                <img src="./img/recommen-portret3.png" class="review-under-content__img" alt="portret" />
+                <div class="review-under-content__margin">
+                  <h3 class="review-under-content__title">Courtney Henry</h3>
+                  <p class="review-under-content__text">CEO Andarafish</p>
+                </div>
+                <div class="review-under-content__flex">
+                  <svg class="review-under-content__svg" width="28" height="28">
+                    <use href="./img/sprite/sprite.svg#icon-review-star"></use>
+                  </svg>
+                  <span class="review-under-content__span">4.3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-list__item" data-animation="left">
+            <img src="./img/review2.png" class="review-list__img" alt="img" />
+            <div class="review-content">
+              <h3 class="review-content__title">
+                Best! I got the house I wanted through Hounter
+              </h3>
+              <p class="review-content__text">
+                Through this website I can get a house with the type and specifications I want
+                very easily, without a complicated process to be able to find information on the
+                house we want.
+              </p>
+              <div class="review-under-content">
+                <img src="./img/recommen-portret1.png" class="review-under-content__img" alt="portret" />
+                <div class="review-under-content__margin">
+                  <h3 class="review-under-content__title">Dianne Russell</h3>
+                  <p class="review-under-content__text">Manager Director</p>
+                </div>
+                <div class="review-under-content__flex">
+                  <svg class="review-under-content__svg" width="28" height="28">
+                    <use href="./img/sprite/sprite.svg#icon-review-star"></use>
+                  </svg>
+                  <span class="review-under-content__span">4.6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-list__item" data-animation="left">
+            <img src="./img/review3.png" class="review-list__img" alt="img" />
+            <div class="review-content">
+              <h3 class="review-content__title">
+                Through the Hounter, I can get a house for my self
+              </h3>
+              <p class="review-content__text">
+                By looking for information about what kind of house we want, we managed to get the
+                house we wanted very quickly, and directly connected with the seller to be able to
+                ask about the details, very helpful!
+              </p>
+              <div class="review-under-content">
+                <img src="./img/recommen-portret3.png" class="review-under-content__img" alt="portret" />
+                <div class="review-under-content__margin">
+                  <h3 class="review-under-content__title">Esther Howard</h3>
+                  <p class="review-under-content__text">Head of Marketing</p>
+                </div>
+                <div class="review-under-content__flex">
+                  <svg class="review-under-content__svg" width="28" height="28">
+                    <use href="./img/sprite/sprite.svg#icon-review-star"></use>
+                  </svg>
+                  <span class="review-under-content__span">4.6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span class="review__span"></span>
+      </div>
+    </section>
+
+    <!-- PARTNER -->
+    <section class="partner">
+      <div class="container">
+        <div class="partner__position">
+          <img class="partner__img" src="./img/partner-blue.png" alt="png" />
+          <img class="partner__img partner__img--green" src="./img/partner-green.png" alt="png" />
+          <div class="partner__content" data-animation="top">
+            <p class="partner__text gold-text">See tips and trick from our partnership</p>
+            <h2 class="partner__title">Find out more about selling and buying homes</h2>
+            <button class="partner__btn" type="button">More Artikel</button>
+          </div>
+
+          <div class="partner__flex">
+            <div class="partner-leftblock">
+              <ul class="partner-list">
+                <li class="partner-list__item" data-animation="left">
+                  <div class="partner-content">
+                    <img class="partner-content__img-first" src="./img/partner1.png" alt="png" />
+
+                    <div class="partner-content__flex">
+                      <div class="partner-content__flex-name">
+                        <img class="partner-content__img" src="./img/recommen-portret1.png" alt="png" />
+                        <p class="partner-content__text">Dianne Russell</p>
+                      </div>
+                      <h3 class="partner-content__title">
+                        The things we need to check when we want to buy a house
+                      </h3>
+                      <div class="partner-content__time">
+                        <svg class="partner-content__svg" width="24" height="24">
+                          <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
+                        </svg>
+                        <p class="partner-content__text-time">4 min read | 25 Apr 2021</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="partner-list__item" data-animation="left">
+                  <div class="partner-content">
+                    <img class="partner-content__img-first" src="./img/partner2.png" alt="png" />
+
+                    <div class="partner-content__flex">
+                      <div class="partner-content__flex-name">
+                        <img class="partner-content__img" src="./img/recommen-portret8.png" alt="png" />
+                        <p class="partner-content__text">Courtney Henry</p>
+                      </div>
+
+                      <h3 class="partner-content__title">
+                        7 Ways to distinguish the quality of the house we want to buy
+                      </h3>
+                      <div class="partner-content__time">
+                        <svg class="partner-content__svg" width="24" height="24">
+                          <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
+                        </svg>
+                        <p class="partner-content__text-time">6 min read | 24 Apr 2021</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="partner-list__item" data-animation="left">
+                  <div class="partner-content">
+                    <img class="partner-content__img-first" src="./img/partner3.png" alt="png" />
+
+                    <div class="partner-content__flex">
+                      <div class="partner-content__flex-name">
+                        <img class="partner-content__img" src="./img/recommen-portret9.png" alt="png" />
+                        <p class="partner-content__text">Darlene Robertson</p>
+                      </div>
+
+                      <h3 class="partner-content__title">
+                        The best way to know the quality of the house we want to buy
+                      </h3>
+                      <div class="partner-content__time">
+                        <svg class="partner-content__svg" width="24" height="24">
+                          <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
+                        </svg>
+                        <p class="partner-content__text-time">2 min read | 24 Apr 2021</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="partner-rightblock" data-animation="left">
+              <img class="partner-rightblock__img-first" src="./img/partner4.png" alt="png" />
+
+              <div class="partner-rightblock__name">
+                <img class="partner-rightblock__img" src="./img/recommen-portret10.png" alt="png" />
+                <p class="partner-rightblock__text">Cameron Williamson</p>
+              </div>
+              <h3 class="partner-rightblock__title">12 Things to know before buying a house</h3>
+              <p class="partner-rightblock__under-text">
+                Want to buy a house but are unsure about what we should know, here I will try to
+                explain what we should know and check when we want to buy a house
+              </p>
+              <div class="partner-rightblock__time-block">
+                <svg class="partner-rightblock__svg" width="24" height="24">
+                  <use href="./img/sprite/sprite.svg#icon-partner-clock"></use>
+                </svg>
+                <p class="partner-rightblock__time-text">8 min read | 25 Apr 2021</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__block" data-animation="opacity">
+          <div class="subscribe-leftblock">
+            <ul class="subscribe-leftblock__list">
+              <li class="subscribe-leftblock__item">
+                <img class="subscribe-leftblock__img" src="./img/subscribe1.png" alt="img" />
+              </li>
+              <li class="subscribe-leftblock__item">
+                <img class="subscribe-leftblock__img subscribe-leftblock__img--man" src="./img/recommen-portret6.png"
+                  alt="img" />
+              </li>
+              <li class="subscribe-leftblock__item">
+                <img class="subscribe-leftblock__img subscribe-leftblock__img--girl" src="./img/recommen-portret1.png"
+                  alt="img" />
+              </li>
+              <li class="subscribe-leftblock__item">
+                <img class="subscribe-leftblock__img subscribe-leftblock__img--house" src="./img/subscribe5.png"
+                  alt="img" />
+              </li>
+            </ul>
+          </div>
+          <div class="subscribe-centerblock" data-animation="top">
+            <h2 class="subscribe-centerblock__title">
+              Subscribe For More Info and update from Hounter
+            </h2>
+            <form class="subscribe-centerblock-form" id="subscribe-centerblock-form">
+              <svg class="subscribe-centerblock-form__svg" width="24" height="24">
+                <use href="./img/sprite/sprite.svg#icon-subscribe-letter"></use>
+              </svg>
+              <input class="subscribe-centerblock-form__input" id="email" type="email" name="email"
+                placeholder="Your email here" />
+              <button class="subscribe-centerblock-form__btn" id="subscribe-centerblock-form__btn" type="button">Subsribe Now</button>
+            </form>
+          </div>
+          <div class="subscribe-rightblock">
+            <ul class="subscribe-rightblock__list">
+              <li class="subscribe-rightblock__item">
+                <img class="subscribe-rightblock__img" src="./img/subscribe3.png" alt="img" />
+              </li>
+              <li class="subscribe-rightblock__item">
+                <img class="subscribe-rightblock__img subscribe-rightblock__img--girl"
+                  src="./img/recommen-portret11.png" alt="img" />
+              </li>
+              <li class="subscribe-rightblock__item">
+                <img class="subscribe-rightblock__img subscribe-rightblock__img--man" src="./img/recommen-portret8.png"
+                  alt="img" />
+              </li>
+              <li class="subscribe-rightblock__item">
+                <img class="subscribe-rightblock__img subscribe-rightblock__img--room" src="./img/subscribe4.png"
+                  alt="img" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="container">
+      <div class="footer__block">
+        <img class="footer__img" src="./img/footer-blue.png" alt="png" />
+        <img class="footer__img footer__img--green" src="./img/footer-green.png" alt="png" />
+        <div class="footer-leftblock" data-animation="left">
+          <a href="#" class="footer-leftblock__link">
+            <img src="./img/logo.svg" class="footer-leftblock__logo" alt="logo" />
+            Hounter
+          </a>
+          <p class="footer-leftblock__text">
+            We provide information about properties such as houses, villas and apartments to help
+            people find their dream home
+          </p>
+
+          <ul class="footer-leftblock__list">
+            <li class="footer-leftblock__item">
+              <a class="footer-leftblock__soc-link" href="#">
+                <svg class="footer-leftblock__svg" width="32" height="32">
+                  <use href="./img/sprite/sprite.svg#icon-footer1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-leftblock__item">
+              <a class="footer-leftblock__soc-link" href="#">
+                <svg class="footer-leftblock__svg" width="32" height="32">
+                  <use href="./img/sprite/sprite.svg#icon-footer2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-leftblock__item">
+              <a class="footer-leftblock__soc-link" href="#">
+                <svg class="footer-leftblock__svg" width="32" height="32">
+                  <use href="./img/sprite/sprite.svg#icon-footer3"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-rightblock">
+          <ul class="footer-rightblock__list">
+            <li class="footer-rightblock__item" data-animation="top">
+              <p class="footer-rightblock__text">Property</p>
+              <ul class="footer-second-list">
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="#">House</a>
+                </li>
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="#">Apartment</a>
+                </li>
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="#">Villa</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-rightblock__item" data-animation="top">
+              <p class="footer-rightblock__text">Article</p>
+              <ul class="footer-second-list">
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="#">New Article</a>
+                </li>
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="#">Popular Article</a>
+                </li>
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="#">Most Read</a>
+                </li>
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="#">Tips & Tricks</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-rightblock__item" data-animation="top">
+              <p class="footer-rightblock__text">Contact</p>
+              <ul class="footer-second-list">
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="#">2464 Royal Ln. Mesa, New Jersey 45463</a>
+                </li>
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="tel:6715550110">(671) 555-0110</a>
+                </li>
+                <li class="footer-second-list__item">
+                  <a class="footer-second-list__link" href="mailto:info@hounter.com">info@hounter.com</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/header-menu.js" type="module"></script>
+  <script src="./js/burger-menu.js" type="module"></script>
+  <script src="./js/scroll.js" type="module"></script>
+  <script src="./js/filter.js" type="module"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/slick.min.js"></script>
+
 </body>
+
 </html>
